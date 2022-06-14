@@ -11,6 +11,10 @@
   background-color: $body-bg;
 }
 
+main {
+  flex-grow: 1;
+}
+
 a {
   text-decoration: none;
 }
