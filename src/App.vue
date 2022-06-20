@@ -1,13 +1,12 @@
 <template>
   <div class="computer d-flex justify-content-center">
     <div id="monitor">
-      <!-- the rounded edge near the glass -->
       <div id="bezel">
-        <!-- the overlay and horizontal pattern -->
+        <!-- Filter -->
         <div id="crt" class="off" onClick="handleClick(event)">
-          <!-- slowly moving scanline -->
+          <!-- Scanline -->
           <div class="scanline"></div>
-          <!-- the input and output -->
+          <!-- Screen -->
           <div class="terminal">
             <div class="container p-0">
               <div class="bg-white d-flex justify-content-start topbar">
@@ -98,23 +97,11 @@ export default {
   background: linear-gradient(
     to bottom,
     rgba(18, 16, 16, 0) 50%,
-    rgba(0, 0, 0, 0.25) 50%
+    rgba(0, 0, 0, 0.082) 50%
   );
   background-size: 100% 5px;
   z-index: 2;
   pointer-events: none;
-}
-
-@keyframes textShadow {
-  0% {
-    text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
-      -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
-  }
-  5% {
-    text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
-      -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
-  }
-  /** etc */
 }
 
 .scanline {
@@ -124,32 +111,19 @@ export default {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(248, 255, 201, 0.671),
-    rgba(0, 0, 0, 0.009) 100%
+    rgba(255, 255, 255, 0.671),
+    rgba(255, 255, 255, 0.009) 100%
   );
   opacity: 0.1;
   position: absolute;
   bottom: 100%;
-  animation: scanline 5s linear infinite;
-}
-
-@keyframes scanline {
-  0% {
-    bottom: 100%;
-  }
-  80% {
-    bottom: 100%;
-  }
-  100% {
-    bottom: 0%;
-  }
+  animation: scanline 4s linear infinite;
 }
 
 #monitor {
   position: relative;
   width: 100vw;
   font-family: "VT323", monospace;
-
   margin: 5%;
   border-radius: 0.8em / 10%;
   background-color: grey;
@@ -161,8 +135,19 @@ export default {
   width: 100vw;
   height: 100vh;
 }
-
 .topbar {
   border-bottom: 3px black solid;
+}
+//ez scanline
+@keyframes scanline {
+  0% {
+    bottom: 100em;
+  }
+  80% {
+    bottom: 80%;
+  }
+  100% {
+    bottom: -10em;
+  }
 }
 </style>

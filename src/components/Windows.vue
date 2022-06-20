@@ -6,11 +6,13 @@
       <button class="resize"><span class="hidden">Resize</span></button>
     </div>
     <div class="details-bar">
-      <span>35 GitHub Repos</span><span>231 GitHub Commits</span
-      ><span>123 Other Data</span>
+      <span></span><span>https://github.com/AustinDye</span><span></span>
     </div>
-    <div class="window__pane">
-      <ul class="files">
+    <div class="window_pane py-0">
+      <GitHub />
+    </div>
+  </div>
+  <!--<ul class="files">
         <li>Vue.js</li>
         <li>Javascript</li>
         <li>HTML 5</li>
@@ -21,31 +23,36 @@
         <li>SQL</li>
         <li>BootStrap 5</li>
         <li>MongoDB</li>
-      </ul>
-    </div>
-  </div>
+      </ul>-->
 </template>
 
 <script></script>
 
 <style lang="scss" scoped>
+.info-box {
+  outline: black 1.5px solid;
+}
+
+.public-bool {
+  outline: #000 1px solid;
+  border-radius: 0.5em;
+}
+//LETS PRACTICE SOME SASS
 $monospace: "Inconsolata", Menlo, Chicago, monospace;
-$base_font_size: 18px;
+$fontSize: 18px;
 $title_font_size: 1.3rem;
-$ui_line_size: 2px;
-$pad_sm: 0.2rem;
-$pad_md: 0.4rem;
-$pad_lg: 1rem;
+$listLine: 2px;
+$pdSm: 0.2rem;
+$pdMd: 0.4rem;
+$pdLg: 1rem;
 
 @mixin hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@mixin chequeredBG($color, $size) {
-  // Squares gradient background - thanks @leaverou 🙌
-  // http://lea.verou.me/css3patterns/
+// Square Gradient found At http://lea.verou.me/css3patterns/
+@mixin crossWeaveBG($color, $size) {
   $sq: $color;
   $sq_size: $size;
 
@@ -72,14 +79,13 @@ $pad_lg: 1rem;
 
 html {
   font-family: $monospace;
-  font-size: $base_font_size;
+  font-size: $fontSize;
   letter-spacing: -0.025em;
   min-height: 100vh;
-  // -webkit-font-smoothing: none;
 }
 
 .desktop {
-  @include chequeredBG(#94bee2, 3px);
+  @include crossWeaveBG(#94bee2, 3px);
   position: relative;
   display: flex;
   justify-content: center;
@@ -111,11 +117,11 @@ html {
     width: $size;
     height: $size;
     margin: $size * 0.5 $size;
-    border: $ui_line_size solid black;
+    border: $listLine solid black;
     cursor: default;
 
     &[data-is-open] {
-      @include chequeredBG(#000, 3px);
+      @include crossWeaveBG(#000, 3px);
       border-color: transparent;
 
       .icon-label {
@@ -130,7 +136,7 @@ html {
       top: $size;
       left: 50%;
       padding: 0 0.25em;
-      margin-top: -2px; // not sure why this fudge is needed??
+      margin-top: -2px;
 
       max-width: $size + ($size * 2);
       overflow: hidden;
@@ -153,7 +159,7 @@ html {
 
 .menu-bar {
   background-color: #000;
-  border-bottom: $ui_line_size solid #000;
+  border-bottom: $listLine solid #000;
   overflow: hidden;
 }
 
@@ -168,9 +174,9 @@ html {
   cursor: default;
 
   li {
-    padding: $pad_sm $pad_md * 2;
+    padding: $pdSm $pdMd * 2;
     margin: 0;
-    margin-bottom: 0.1rem; // line-height fudge
+    margin-bottom: 0.1rem;
     font-size: $title_font_size;
     font-weight: bold;
   }
@@ -185,6 +191,8 @@ html {
   flex-direction: column;
   margin: 1rem;
   width: 600px;
+  max-height: 75%;
+  max-width: 180%;
   min-width: 320px;
   min-height: 100px;
   resize: both;
@@ -197,18 +205,18 @@ html {
     display: flex;
   }
 
-  &__pane {
+  &_pane {
     overflow-y: scroll;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
-
+    //I cannot find the reference I used for this scrollbar, when I do I'll update this comment
     &::-webkit-scrollbar {
       width: 22px;
       background-color: #fff;
     }
 
     &::-webkit-scrollbar-track {
-      @include chequeredBG(#000, 4px);
+      @include crossWeaveBG(#000, 4px);
       width: 10px;
       border-left: 4px solid black;
     }
@@ -217,7 +225,7 @@ html {
       width: 20px;
       box-sizing: content-box;
       background-color: #fff;
-      border: $ui_line_size solid black;
+      border: $listLine solid black;
       border-right: none;
     }
   }
@@ -231,12 +239,11 @@ html {
 
 .title-bar {
   flex: none;
-
   display: flex;
   align-items: center;
   height: 1.5rem;
-  margin: $pad_sm/2 0;
-  padding: $pad_sm $pad_sm/2;
+  margin: $pdSm/2 0;
+  padding: $pdSm $pdSm/2;
 
   $lines: 6;
   $p: 100% / 15;
@@ -261,33 +268,28 @@ html {
 }
 
 .title-bar button {
-  // painting larger and then scaling down avoids subpixel alignment issues with the linear-gradient at small sizes
-
-  $scale: 0.5;
-  $button_scaled_line_size: $ui_line_size * (1 / $scale);
+  // I have no idea what I am doing at this point
+  $buttonLine: $listLine * (1 / 0.5);
 
   position: relative;
   display: block;
-  width: 20px * (1 / $scale);
-  height: 20px * (1 / $scale);
-  margin: 0 $pad_sm;
-  border: $button_scaled_line_size solid #000;
-  outline: clamp($ui_line_size, $button_scaled_line_size, $ui_line_size * 3)
-    solid #fff;
+  width: 20px * (1 / 0.5);
+  height: 20px * (1 / 0.5);
+  margin: 0 $pdSm;
+  border: $buttonLine solid #000;
+  outline: clamp($listLine, $buttonLine, $listLine * 3) solid #fff;
   background-color: #fff;
   cursor: pointer;
 
-  transform: scale($scale);
+  transform: scale(0.5);
 
   span {
     @include hidden();
   }
 
   &.close {
-    @mixin bg_crossed_lines($w: 30%, $h: $button_scaled_line_size) {
+    @mixin bg_crossed_lines($w: 30%, $h: $buttonLine) {
       $line: #000 0%, #000 100%;
-      $debugline: red 0%, red 100%;
-
       background: linear-gradient($line) left center,
         linear-gradient($line) right center, linear-gradient($line) center top,
         linear-gradient($line) center bottom;
@@ -307,15 +309,12 @@ html {
     }
 
     &::before {
-      // horizontal & vertical crosshairs
       @include bg_crossed_lines();
     }
 
     &::after {
-      // diagonal (rotated) crosshairs
       $s: 1.1;
-      $height: $button_scaled_line_size / $s;
-
+      $height: $buttonLine / $s;
       @include bg_crossed_lines($w: 22.5%, $h: $height);
       transform: rotate(45deg) scale($s);
     }
@@ -331,14 +330,12 @@ html {
   &.resize {
     $line: #000 0%, #000 100%;
     $w: 60%;
-    $h: $button_scaled_line_size;
-
+    $h: $buttonLine;
     background: linear-gradient($line) left ($w - 2%),
       linear-gradient(to bottom, $line) ($w - 2%) top;
     background-size: $w $h, $h $w;
     background-repeat: no-repeat;
     background-color: #fff;
-
     &:active {
       background: #fff;
     }
@@ -347,15 +344,12 @@ html {
 
 .details-bar {
   flex: none;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: $pad_md $pad_md * 2;
-
+  padding: $pdMd $pdMd * 2;
   border: 0.1rem solid black;
   border-width: 0.1rem 0;
-
   font-size: 1rem;
 }
 </style>
