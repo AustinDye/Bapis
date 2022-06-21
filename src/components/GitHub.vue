@@ -55,16 +55,22 @@
     </div>
   </nav>
   <div class="row">
-    <div
-      class="col-12 d-flex justify-content-center mt-3 mb-3 pb-0 border-bottom border-dark"
-    >
-      <p class="mx-3">
-        <i class="mdi mdi-book-open-blank-variant"></i>Overview
-      </p>
-      <p class="mx-3"><i class="mdi mdi-book"></i>Overview</p>
-      <p class="mx-3"><i class="mdi mdi-application-outline"></i>Overview</p>
-      <p class="mx-3"><i class="mdi mdi-cube-outline"></i>Overview</p>
-      <p class="mx-3"><i class="mdi mdi-star-outline"></i>Overview</p>
+    <div class="col-12 d-flex mt-3 mb-3 border-bottom border-dark">
+      <div class="container d-flex justify-content-center align-items-baseline">
+        <p class="mx-3">
+          <i class="mdi mdi-book-open-blank-variant"></i>Overview
+        </p>
+        <p class="mx-3 p-0 m-0"><i class="mdi mdi-book p-0 m-0"></i>Overview</p>
+        <p class="mx-3 p-0 m-0">
+          <i class="mdi mdi-application-outline p-0 m-0"></i>Overview
+        </p>
+        <p class="mx-3 p-0 m-0">
+          <i class="mdi mdi-cube-outline p-0 m-0"></i>Overview
+        </p>
+        <p class="mx-3 p-0 m-0">
+          <i class="mdi mdi-star-outline p-0 m-0"></i>Overview
+        </p>
+      </div>
     </div>
     <div class="col-3 text-center">
       <div class="container position-relative d-flex profile-img">

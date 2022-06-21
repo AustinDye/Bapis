@@ -23,7 +23,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row window-row">
                 <div class="col-6">
                   <Windows />
                 </div>

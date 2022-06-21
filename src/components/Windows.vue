@@ -1,5 +1,5 @@
 <template>
-  <div class="window" id="system-window" data-is-open="data-is-open">
+  <div class="window" id="system-window" data-is-open="data-is-closed">
     <div class="title-bar">
       <button class="close"><span class="hidden">Close</span></button>
       <h1 class="title">Austin Dye</h1>
@@ -190,11 +190,11 @@ html {
   display: none;
   flex-direction: column;
   margin: 1rem;
-  width: 600px;
-  max-height: 75%;
-  max-width: 180%;
-  min-width: 320px;
-  min-height: 100px;
+
+  max-height: 55%;
+  max-width: 70vw;
+  min-width: 30%;
+  min-height: 20%;
   resize: both;
   overflow: hidden;
 
@@ -231,7 +231,7 @@ html {
   }
 
   &.resized {
-    max-width: 90%;
+    max-width: 100%;
     width: 90vw;
     height: 90vh;
   }
