@@ -58,7 +58,7 @@
     <div class="col-12 d-flex mt-3 mb-3 border-bottom border-dark">
       <div class="container d-flex justify-content-center align-items-baseline">
         <p class="mx-3">
-          <i class="mdi mdi-book-open-blank-variant"></i>Overview
+          <i class="mdi mdi-book-open-blank-variant md-none"></i>Overview
         </p>
         <p class="mx-3 p-0 m-0"><i class="mdi mdi-book p-0 m-0"></i>Overview</p>
         <p class="mx-3 p-0 m-0">
@@ -72,7 +72,7 @@
         </p>
       </div>
     </div>
-    <div class="col-3 text-center">
+    <div class="col-lg-3 col-sm-12 text-center">
       <div class="container position-relative d-flex profile-img">
         <img
           class="rounded-circle w-75 position-absolute"
@@ -86,9 +86,9 @@
         >
       </div>
     </div>
-    <div class="col-8 p-0 m-0">
+    <div class="col-md-8 p-0 m-0">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-12">
           <div class="info-box card p-2 m-0">
             <p>AustinDye/README.md</p>
             <h1>Hi there 👋 My name is Austin Dye</h1>
@@ -100,7 +100,7 @@
           </div>
         </div>
         <h4>Pinned</h4>
-        <div class="col-6 my-2">
+        <div class="col-md-6 my-2">
           <div class="card p-2">
             <span class="d-flex justify-content-between">
               <h5 class="d-flex">
@@ -112,7 +112,7 @@
             <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
           </div>
         </div>
-        <div class="col-6 my-2">
+        <div class="col-md-6 my-2">
           <div class="card p-2">
             <span class="d-flex justify-content-between">
               <h5 class="d-flex">
@@ -124,7 +124,7 @@
             <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
           </div>
         </div>
-        <div class="col-6 my-2">
+        <div class="col-md-6 my-2">
           <div class="card p-2">
             <span class="d-flex justify-content-between">
               <h5 class="d-flex">
@@ -136,7 +136,7 @@
             <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="card p-2">
             <span class="d-flex justify-content-between">
               <h5 class="d-flex">

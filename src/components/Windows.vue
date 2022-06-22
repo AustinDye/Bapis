@@ -191,10 +191,10 @@ html {
   flex-direction: column;
   margin: 1rem;
 
-  max-height: 55%;
+  max-height: 70vh;
   max-width: 70vw;
-  min-width: 30%;
-  min-height: 20%;
+  min-width: 40vw;
+  min-height: 40vh;
   resize: both;
   overflow: hidden;
 

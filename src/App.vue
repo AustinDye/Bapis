@@ -8,7 +8,7 @@
           <div class="scanline"></div>
           <!-- Screen -->
           <div class="terminal">
-            <div class="container p-0">
+            <div>
               <div class="bg-white d-flex justify-content-start topbar">
                 <div class="row">
                   <div class="col-4 d-flex">
@@ -24,7 +24,7 @@
                 </div>
               </div>
               <div class="row window-row">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                   <Windows />
                 </div>
                 <div class="col-6">
@@ -119,16 +119,15 @@ export default {
   bottom: 100%;
   animation: scanline 4s linear infinite;
 }
-
 #monitor {
   position: relative;
   width: 100vw;
   font-family: "VT323", monospace;
-  margin: 5%;
+  margin: 1%;
   border-radius: 0.8em / 10%;
   background-color: grey;
   overflow: hidden;
-  border: 2em #e8e3c9 inset;
+  border: 1em #e8e3c9 inset;
 }
 .computer {
   background-color: #f9f4d9;
