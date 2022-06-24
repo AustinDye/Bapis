@@ -28,16 +28,16 @@
             </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white">Disabled</a>
+            <a class="nav-link text-white">Pull Requests</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white">Disabled</a>
+            <a class="nav-link text-white">Issues</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white">Disabled</a>
+            <a class="nav-link text-white">Marketplace</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white">Disabled</a>
+            <a class="nav-link text-white">Explore</a>
           </li>
         </ul>
         <span
@@ -60,15 +60,17 @@
         <p class="mx-3">
           <i class="mdi mdi-book-open-blank-variant md-none"></i>Overview
         </p>
-        <p class="mx-3 p-0 m-0"><i class="mdi mdi-book p-0 m-0"></i>Overview</p>
         <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-application-outline p-0 m-0"></i>Overview
+          <i class="mdi mdi-book p-0 m-0"></i>Repositories
         </p>
         <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-cube-outline p-0 m-0"></i>Overview
+          <i class="mdi mdi-application-outline p-0 m-0"></i>Projects
         </p>
         <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-star-outline p-0 m-0"></i>Overview
+          <i class="mdi mdi-cube-outline p-0 m-0"></i>Packages
+        </p>
+        <p class="mx-3 p-0 m-0">
+          <i class="mdi mdi-star-outline p-0 m-0"></i>Stars
         </p>
       </div>
     </div>
