@@ -4,7 +4,6 @@
       <div id="bezel">
         <!-- Filter -->
         <div id="crt" class="off" onClick="handleClick(event)">
-          <!-- Scanline -->
           <div class="scanline"></div>
           <!-- Screen -->
           <div class="terminal">
