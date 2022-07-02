@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="#"
         ><i class="mdi mdi-github mdi-36px text-white"></i
       ></a>
-      <button
+      <div
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -13,16 +13,18 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <span class="navbar-toggler-icon"
+          ><i class="mdi mdi-menu text-white fs-1"></i
+        ></span>
+      </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 p-0 mt-2"
+                class="form-control p-0 mt-2 fs-6"
                 type="search"
-                placeholder="Search"
+                placeholder=" Search or jump to.. ."
                 aria-label="Search"
               />
             </form>
@@ -54,44 +56,76 @@
       </div>
     </div>
   </nav>
-  <div class="row">
-    <div class="col-12 d-flex mt-3 mb-3 border-bottom border-dark">
-      <div class="container d-flex justify-content-center align-items-baseline">
-        <p class="mx-3">
-          <i class="mdi mdi-book-open-blank-variant md-none"></i>Overview
-        </p>
-        <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-book p-0 m-0"></i>Repositories
-        </p>
-        <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-application-outline p-0 m-0"></i>Projects
-        </p>
-        <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-cube-outline p-0 m-0"></i>Packages
-        </p>
-        <p class="mx-3 p-0 m-0">
-          <i class="mdi mdi-star-outline p-0 m-0"></i>Stars
-        </p>
+  <div class="row p-2">
+    <div class="col-12">
+      <div class="d-sm-none">
+        <div class="d-flex">
+          <img
+            class="rounded-circle w-25 h-25"
+            alt="100x100"
+            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            data-holder-rendered="true"
+          />
+          <span class="ms-4"
+            ><h5 class="text-start p-0 m-0">Austin Dye</h5>
+            <p class="text-start p-0 m-0">AustinDye</p></span
+          >
+        </div>
       </div>
     </div>
-    <div class="col-lg-3 col-sm-12 text-center">
-      <div class="container position-relative d-flex profile-img">
-        <img
-          class="rounded-circle w-75 position-absolute"
-          alt="100x100"
-          src="https://avatars.githubusercontent.com/u/101369015?v=4"
-          data-holder-rendered="true"
-        />
-        <span class="profile-t"
-          ><h5 class="text-start p-0 m-0">Austin Dye</h5>
-          <p class="text-start p-0 m-0">AustinDye</p></span
+    <div class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top">
+      <div
+        class="container d-flex justify-content-center align-items-baseline overflow-scroll"
+      >
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-book-open-blank-variant d-none d-md-inline"></i
+          >Overview
+        </p>
+        <div class="d-flex">
+          <p class="mx-1 p-1 m-0">
+            <i class="mdi mdi-book p-0 m-0 d-none d-md-inline"></i>Repositories
+          </p>
+        </div>
+        <p
+          class="bg-dark text-light rounded-pill px-2 py-0"
+          style="min-width: 20px"
         >
+          46
+        </p>
+
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-application-outline p-0 m-0 d-none d-md-inline"></i
+          >Projects
+        </p>
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-cube-outline p-0 m-0 d-none d-md-inline"></i
+          >Packages
+        </p>
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-star-outline p-0 m-0 d-none d-md-inline"></i>Stars
+        </p>
       </div>
     </div>
-    <div class="col-md-8 p-0 m-0">
+    <div class="col-lg-3 col-md-3 mb-5 ps-5 d-none d-sm-block">
+      <div class="position-relative profile-img">
+        <div class="position-absolute">
+          <img
+            class="rounded-circle w-100"
+            alt="100x100"
+            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            data-holder-rendered="true"
+          />
+        </div>
+        <div class="profile-text">
+          <h1 class="fs-2 m-0 p-0">Austin Dye</h1>
+          <h5 class="m-0 p-0">AustinDye</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
       <div class="row">
-        <div class="col-md-12">
-          <div class="info-box card p-2 m-0">
+        <div class="col-md-12 my-2">
+          <div class="info-box card p-3 m-0">
             <p>AustinDye/README.md</p>
             <h1>Hi there 👋 My name is Austin Dye</h1>
             <h4>Male || He/Him || INTP-T</h4>
@@ -103,51 +137,75 @@
         </div>
         <h4>Pinned</h4>
         <div class="col-md-6 my-2">
-          <div class="card p-2">
+          <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <h5 class="d-flex">
+              <a class="d-flex">
                 <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-                <p class="public-bool my-1 mx-2 fs-6">public</p>
-              </h5>
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
             ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
           </div>
         </div>
         <div class="col-md-6 my-2">
-          <div class="card p-2">
+          <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <h5 class="d-flex">
+              <a class="d-flex">
                 <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-                <p class="public-bool my-1 mx-2 fs-6">public</p>
-              </h5>
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
             ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
           </div>
         </div>
         <div class="col-md-6 my-2">
-          <div class="card p-2">
+          <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <h5 class="d-flex">
+              <a class="d-flex">
                 <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-                <p class="public-bool my-1 mx-2 fs-6">public</p>
-              </h5>
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
             ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card p-2">
+        <div class="col-md-6 my-2">
+          <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <h5 class="d-flex">
+              <a class="d-flex">
                 <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-                <p class="public-bool my-1 mx-2 fs-6">public</p>
-              </h5>
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
             ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle"></i>CSS</h6>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card p-3">
+            <span class="d-flex justify-content-between">
+              <a class="d-flex">
+                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
+              <i class="mdi mdi-dots-grid"></i
+            ></span>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card p-3">
+            <span class="d-flex justify-content-between">
+              <a class="d-flex">
+                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
+              <i class="mdi mdi-dots-grid"></i
+            ></span>
+            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
           </div>
         </div>
       </div>
@@ -165,7 +223,8 @@ export default {
 
 <style lang="scss" scoped>
 .profile-img {
-  top: -1.5em;
+  top: -3em;
+  z-index: 3;
 }
 .user-img {
   width: 1.5em;
@@ -176,10 +235,27 @@ export default {
 
 .card {
   border-color: black;
+  background-color: #161b22;
+  border-color: rgba(170, 170, 170, 0.255);
 }
 
 .profile-t {
   padding-top: 95%;
   margin-left: 10%;
+}
+
+.profile-nav {
+  border-bottom: rgba(255, 255, 255, 0.135) 1px solid;
+  z-index: 2;
+  background-color: #161b22;
+}
+
+input {
+  background-color: #161b22;
+}
+
+.profile-text {
+  padding-top: 30vh;
+  z-index: 0;
 }
 </style>

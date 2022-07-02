@@ -8,22 +8,13 @@
     <div class="details-bar">
       <span></span><span>https://github.com/AustinDye</span><span></span>
     </div>
-    <div class="window_pane py-0">
+    <div class="window_pane p-0" v-if="(page = 1)">
       <GitHub />
     </div>
+    <div class="window_pane p-0" v-else>
+      <About />
+    </div>
   </div>
-  <!--<ul class="files">
-        <li>Vue.js</li>
-        <li>Javascript</li>
-        <li>HTML 5</li>
-        <li>CSS 3</li>
-        <li>Node.js</li>
-        <li>C#</li>
-        <li>.NET</li>
-        <li>SQL</li>
-        <li>BootStrap 5</li>
-        <li>MongoDB</li>
-      </ul>-->
 </template>
 
 <script></script>
@@ -192,10 +183,9 @@ html {
   margin: 1rem;
 
   max-height: 70vh;
-  max-width: 70vw;
-  min-width: 40vw;
+  max-width: 90vw;
+  min-width: 80vw;
   min-height: 40vh;
-  resize: both;
   overflow: hidden;
 
   background-color: #fff;
@@ -351,5 +341,10 @@ html {
   border: 0.1rem solid black;
   border-width: 0.1rem 0;
   font-size: 1rem;
+}
+
+.window_pane {
+  background-color: #161b22;
+  color: white;
 }
 </style>
