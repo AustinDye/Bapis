@@ -18,7 +18,7 @@
                     <p class="fs-3 ps-2 my-0 pb-0">Skills</p>
                   </div>
                   <div class="col-4">
-                    <p class="fs-3 my-0 pb-0">About</p>
+                    <p class="fs-3 my-0 pb-0" @click="goAbout">About</p>
                   </div>
                 </div>
               </div>
@@ -26,7 +26,7 @@
                 <div class="col-md-6 col-sm-12">
                   <Windows />
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="row d-flex align-items-end flex-column m-2">
                     <div class="col-2">
                       <img
@@ -44,10 +44,6 @@
                       />
                       <p class="text-center bg-white">LinkedIn</p>
                     </div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"></div>
                   </div>
                 </div>
               </div>
@@ -67,19 +63,6 @@ export default {
   setup() {
     return {
       appState: computed(() => AppState),
-
-      async boot() {
-        clear();
-        await typer("Hello world");
-
-        login();
-      },
-      async main() {
-        let command = await input();
-        await parse(command);
-
-        main();
-      },
     };
   },
 };
