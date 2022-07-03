@@ -8,10 +8,10 @@
     <div class="details-bar">
       <span></span><span>https://github.com/AustinDye</span><span></span>
     </div>
-    <div class="window_pane p-0" v-if="(page = 1)">
+    <!-- <div class="window_pane p-0" v-if="(page = 1)">
       <GitHub />
-    </div>
-    <div class="window_pane p-0" v-else>
+    </div> -->
+    <div class="window_pane p-0">
       <About />
     </div>
   </div>

@@ -56,7 +56,7 @@
       </div>
     </div>
   </nav>
-  <div class="row p-2">
+  <div class="row p-2 git-font">
     <div class="col-12">
       <div class="d-sm-none">
         <div class="d-flex">
@@ -257,5 +257,9 @@ input {
 .profile-text {
   padding-top: 30vh;
   z-index: 0;
+}
+
+.git-font {
+  font-family: "Space Mono", monospace;
 }
 </style>
