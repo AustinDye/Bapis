@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -57,43 +57,31 @@
           </div>
           <div class="carousel-inner rounded">
             <div class="carousel-item active">
+              <h1 class="bg-info text-dark">Inspire</h1>
+
               <img
-                src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/34%20of%20the%20Best%20Website%20Designs%20to%20Inspire%20You%20in%202022-Feb-05-2022-12-30-34-43-AM.jpeg?width=600&name=34%20of%20the%20Best%20Website%20Designs%20to%20Inspire%20You%20in%202022-Feb-05-2022-12-30-34-43-AM.jpeg"
+                src="src/assets/img/inspire.png "
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
             </div>
             <div class="carousel-item">
+              <h1 class="bg-info text-dark">Scurvy Dogs</h1>
+
               <img
-                src="https://colorlib.com/cdn-cgi/image/width=1200,height=927,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/accounting-website-design.jpg"
+                src="src/assets/img/scurvydogs.png"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
             </div>
             <div class="carousel-item">
+              <h1 class="bg-info text-dark">Herbalist Simulator</h1>
+
               <img
-                src="https://media.graphcms.com/dEkC89MQTGqTLOWSLay9"
+                src="src/assets/img/herbalist.png"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
             </div>
           </div>
           <button
@@ -127,7 +115,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="card mb-4">
           <h4 class="bg-warning text-dark rounded-top ps-2">Front-End</h4>
           <ul>

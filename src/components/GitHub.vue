@@ -75,7 +75,7 @@
     </div>
     <div class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top">
       <div
-        class="container d-flex justify-content-center align-items-baseline overflow-scroll"
+        class="container d-flex justify-content-center align-items-baseline overflow-scroll pt-2"
       >
         <p class="mx-1 p-1 m-0">
           <i class="mdi mdi-book-open-blank-variant d-none d-md-inline"></i
@@ -118,7 +118,18 @@
         </div>
         <div class="profile-text">
           <h1 class="fs-2 m-0 p-0">Austin Dye</h1>
-          <h5 class="m-0 p-0">AustinDye</h5>
+          <h5 class="m-0 p-0 mb-4">AustinDye</h5>
+          <span class="d-flex">
+            <p>
+              <i class="mdi mdi-account-multiple-outline pe-2"></i
+              ><b>1</b> follower
+            </p>
+            <div class="mdi mdi-circle-small p-1"></div>
+            <p><b>4</b> following</p></span
+          >
+
+          <i class="mdi mdi-link-variant pe-2"></i
+          ><a class="">aupredye@gmail.com</a>
         </div>
       </div>
     </div>
@@ -255,7 +266,7 @@ input {
 }
 
 .profile-text {
-  padding-top: 30vh;
+  padding-top: 37vh;
   z-index: 0;
 }
 

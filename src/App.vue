@@ -23,28 +23,8 @@
                 </div>
               </div>
               <div class="row window-row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-12">
                   <Windows />
-                </div>
-                <div class="col-md-6">
-                  <div class="row d-flex align-items-end flex-column m-2">
-                    <div class="col-2">
-                      <img
-                        class="img-fluid"
-                        src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d7e4e1e509c728d.png"
-                        alt=""
-                      />
-                      <p class="text-center bg-white">Github</p>
-                    </div>
-                    <div class="col-2">
-                      <img
-                        class="img-fluid"
-                        src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/0baeb31aedf8e64.png"
-                        alt=""
-                      />
-                      <p class="text-center bg-white">LinkedIn</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

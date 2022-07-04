@@ -8,12 +8,12 @@
     <div class="details-bar">
       <span></span><span>https://github.com/AustinDye</span><span></span>
     </div>
-    <!-- <div class="window_pane p-0" v-if="(page = 1)">
+    <div class="window_pane p-0" v-if="(page = 1)">
       <GitHub />
-    </div> -->
-    <div class="window_pane p-0">
-      <About />
     </div>
+    <!-- <div class="window_pane p-0">
+      <About />
+    </div> -->
   </div>
 </template>
 
@@ -182,8 +182,8 @@ html {
   flex-direction: column;
   margin: 1rem;
 
-  max-height: 70vh;
-  max-width: 90vw;
+  max-height: 83vh;
+  max-width: 100vw;
   min-width: 80vw;
   min-height: 40vh;
   overflow: hidden;
