@@ -43,7 +43,7 @@
           </li>
         </ul>
         <span
-          ><i class="mdi mdi-bell-outline text-white fs-5 mx-3"></i>
+          ><i class="mdi mdi-bell-outline text-white fs-5 mx-2"></i>
           <i class="mdi mdi-plus text-white fs-5"
             ><i class="mdi mdi-chevron-down text-white p-0 m-0"></i></i
           ><img
