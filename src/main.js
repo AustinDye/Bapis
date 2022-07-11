@@ -1,5 +1,3 @@
-import 'bootstrap'
-import { createApp } from 'vue'
 // @ts-ignore
 import App from './App.vue'
 import { registerGlobalComponents } from './registerGlobalComponents'
