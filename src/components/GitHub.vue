@@ -106,7 +106,7 @@
         </p>
       </div>
     </div>
-    <div class="col-lg-3 col-md-3 mb-5 ps-5 d-none d-sm-block">
+    <div class="col-lg-3 mb-5 ps-5 d-none d-md-block">
       <div class="position-relative profile-img">
         <div class="position-absolute">
           <img
