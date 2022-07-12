@@ -58,7 +58,7 @@
   </nav>
   <div class="row p-2 git-font">
     <div class="col-12">
-      <div class="d-sm-none">
+      <div class="d-sm none d-md-block d-lg-none">
         <div class="d-flex">
           <img
             class="rounded-circle w-25 h-25"
@@ -142,7 +142,7 @@
       </div>
     </div>
 
-    <div class="col-lg-3 mb-5 ps-5 d-none d-md-block">
+    <div class="col-lg-3 mb-5 ps-5 d-none d-lg-flex">
       <div class="position-relative profile-img">
         <div class="position-absolute">
           <img

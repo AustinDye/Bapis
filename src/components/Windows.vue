@@ -5,19 +5,34 @@
       <h1 class="title">Austin Dye</h1>
       <button class="resize"><span class="hidden">Resize</span></button>
     </div>
-    <div class="details-bar">
+    <div class="details-bar" @click="switchPage(2)">
       <span></span><span>https://github.com/AustinDye</span><span></span>
     </div>
     <div class="window_pane p-0" v-if="(page = 1)">
       <GitHub />
     </div>
-    <!-- <div class="window_pane p-0">
+    <div class="window_pane p-0" v-else>
       <About />
-    </div> -->
+    </div>
   </div>
 </template>
 
-<script></script>
+<script>
+import { computed } from "@vue/reactivity";
+import { AppState } from "../AppState";
+import { fakeWebService } from "../services/FakeWebServices";
+export default {
+  setup() {
+    return {
+      page: computed(() => AppState.page),
+      switchPage(num) {
+        console.log(AppState.page);
+        fakeWebService.switchPage(num);
+      },
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .info-box {

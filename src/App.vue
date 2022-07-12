@@ -3,7 +3,7 @@
     <div id="monitor">
       <div id="bezel">
         <!-- Filter -->
-        <div id="crt" class="off" onClick="handleClick(event)">
+        <div id="crt" class="off">
           <div class="scanline"></div>
           <!-- Screen -->
           <div class="terminal">
@@ -18,7 +18,7 @@
                     <p class="fs-3 ps-2 my-0 pb-0">Skills</p>
                   </div>
                   <div class="col-4">
-                    <p class="fs-3 my-0 pb-0" @click="goAbout">About</p>
+                    <p class="fs-3 my-0 pb-0">About</p>
                   </div>
                 </div>
               </div>
@@ -38,6 +38,7 @@
 <script>
 import { computed } from "vue";
 import { AppState } from "./AppState";
+import { fakeWebService } from "./services/FakeWebServices";
 export default {
   name: "App",
   setup() {
