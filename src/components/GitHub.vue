@@ -344,6 +344,6 @@ input {
 }
 
 .git-font {
-  font-family: "Space Mono", monospace;
+  font-size: 1.5em;
 }
 </style>
