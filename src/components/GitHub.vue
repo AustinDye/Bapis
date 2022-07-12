@@ -73,7 +73,9 @@
         </div>
       </div>
     </div>
-    <div class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top">
+    <div
+      class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top d-none d-md-flex"
+    >
       <div
         class="container d-flex justify-content-center align-items-baseline overflow-scroll pt-2"
       >
@@ -106,6 +108,40 @@
         </p>
       </div>
     </div>
+    <div
+      class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top d-flex d-md-none"
+    >
+      <div class="container d-flex align-items-baseline overflow-scroll pt-2">
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-book-open-blank-variant d-none d-md-inline"></i
+          >Overview
+        </p>
+        <div class="d-flex">
+          <p class="mx-1 p-1 m-0">
+            <i class="mdi mdi-book p-0 m-0 d-none d-md-inline"></i>Repositories
+          </p>
+        </div>
+        <p
+          class="bg-dark text-light rounded-pill px-2 py-0"
+          style="min-width: 20px"
+        >
+          46
+        </p>
+
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-application-outline p-0 m-0 d-none d-md-inline"></i
+          >Projects
+        </p>
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-cube-outline p-0 m-0 d-none d-md-inline"></i
+          >Packages
+        </p>
+        <p class="mx-1 p-1 m-0">
+          <i class="mdi mdi-star-outline p-0 m-0 d-none d-md-inline"></i>Stars
+        </p>
+      </div>
+    </div>
+
     <div class="col-lg-3 mb-5 ps-5 d-none d-md-block">
       <div class="position-relative profile-img">
         <div class="position-absolute">
