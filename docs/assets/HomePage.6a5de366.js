@@ -1,0 +1,1 @@
+import{_ as e}from"./index.a9a7227d.js";import"./vendor.0e9570ca.js";const _={name:"Home"};function a(o,r,t,n,s,d){return null}var m=e(_,[["render",a],["__scopeId","data-v-150a7d8d"]]);export{m as default};
