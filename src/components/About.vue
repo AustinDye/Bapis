@@ -60,7 +60,7 @@
               <h1 class="bg-info text-dark">Inspire</h1>
 
               <img
-                src="src/assets/img/inspire.png "
+                src="/Users/austindye/Documents/GitHub/Bapis/src/assets/img/inspire.png"
                 class="d-block w-100"
                 alt="..."
               />
@@ -69,7 +69,7 @@
               <h1 class="bg-info text-dark">Scurvy Dogs</h1>
 
               <img
-                src="src/assets/img/scurvydogs.png"
+                src="/Users/austindye/Documents/GitHub/Bapis/src/assets/img/scurvydogs.png"
                 class="d-block w-100"
                 alt="..."
               />
@@ -78,7 +78,7 @@
               <h1 class="bg-info text-dark">Herbalist Simulator</h1>
 
               <img
-                src="src/assets/img/herbalist.png"
+                src="/Users/austindye/Documents/GitHub/Bapis/src/assets/img/herbalist.png"
                 class="d-block w-100"
                 alt="..."
               />

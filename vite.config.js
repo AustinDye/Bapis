@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/WIP-Portfolio/',
   plugins: [vue()],
   build: {
     outDir: 'docs',
