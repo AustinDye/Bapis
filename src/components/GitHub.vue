@@ -177,9 +177,37 @@
             <h1>Hi there 👋 My name is Austin Dye</h1>
             <h4>Male || He/Him || INTP-T</h4>
             <p>
-              Interested in: QA Test Automation || Machine Learning || Virtual
-              Reality / Augemented Reality Technology || Video Game Development
+              Interested in: QA || Virtual Reality / Augemented Reality
+              Technology || Video Game Development || Web Development
             </p>
+            <h5 class="mt-3 mx-4">-Links-</h5>
+            <ul class="mt-3">
+              <li class="d-flex">
+                <p>CodeWars:</p>
+                <a href="https://www.codewars.com/users/AustinDye"
+                  >https://www.codewars.com/users/AustinDye</a
+                >
+              </li>
+              <li class="d-flex">
+                <p>LinkedIn:</p>
+                <a href="https://www.linkedin.com/in/austin-dye-03464199/"
+                  >https://www.linkedin.com/in/austin-dye-03464199/</a
+                >
+              </li>
+              <li class="d-flex">
+                <p>Unity Learn:</p>
+                <a
+                  href="https://learn.unity.com/u/5d5b6908edbc2a002489e7a4?tab=profile"
+                  >https://learn.unity.com/u/5d5b6908edbc2a002489e7a4?tab=profile</a
+                >
+              </li>
+              <li class="d-flex">
+                <p>Portfolio:</p>
+                <a href="https://austindye.github.io/WIP-Portfolio/#/"
+                  >You are here!</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
         <h4>Pinned</h4>
@@ -198,8 +226,38 @@
         <div class="col-md-6 my-2">
           <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <a class="d-flex">
-                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
+              <a
+                class="d-flex"
+                href="https://github.com/AustinDye/clicker-game"
+              >
+                <i class="mdi mdi-book mx-1"></i>clicker-game
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
+              <i class="mdi mdi-dots-grid"></i
+            ></span>
+            <h6 class="p-1"><i class="mdi mdi-circle text-danger"></i>HTML</h6>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card p-3">
+            <span class="d-flex justify-content-between">
+              <a
+                class="d-flex"
+                href="https://github.com/AustinDye/WIP-Portfolio"
+              >
+                <i class="mdi mdi-book mx-1"></i>WIP-Portfolio
+              </a>
+              <p class="public-bool my-1 fs-6">public</p>
+              <i class="mdi mdi-dots-grid"></i
+            ></span>
+            <h6 class="p-1"><i class="mdi mdi-circle text-success"></i>Vue</h6>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card p-3">
+            <span class="d-flex justify-content-between">
+              <a class="d-flex" href="https://github.com/ZacGamble/Ectogram">
+                <i class="mdi mdi-book mx-1"></i>Ectogram
               </a>
               <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
@@ -210,8 +268,8 @@
         <div class="col-md-6 my-2">
           <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <a class="d-flex">
-                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
+              <a class="d-flex" href="https://github.com/AustinDye/scurvy-dogs">
+                <i class="mdi mdi-book mx-1"></i>scurvy-dogs
               </a>
               <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
@@ -222,37 +280,16 @@
         <div class="col-md-6 my-2">
           <div class="card p-3">
             <span class="d-flex justify-content-between">
-              <a class="d-flex">
-                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
+              <a
+                class="d-flex"
+                href="https://github.com/AustinDye/Keepr-BootCamp-Final"
+              >
+                <i class="mdi mdi-book mx-1"></i>Keepr-BootCamp-Final
               </a>
               <p class="public-bool my-1 fs-6">public</p>
               <i class="mdi mdi-dots-grid"></i
             ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
-          </div>
-        </div>
-        <div class="col-md-6 my-2">
-          <div class="card p-3">
-            <span class="d-flex justify-content-between">
-              <a class="d-flex">
-                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-              </a>
-              <p class="public-bool my-1 fs-6">public</p>
-              <i class="mdi mdi-dots-grid"></i
-            ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
-          </div>
-        </div>
-        <div class="col-md-6 my-2">
-          <div class="card p-3">
-            <span class="d-flex justify-content-between">
-              <a class="d-flex">
-                <i class="mdi mdi-book mx-1"></i>checkpoint-3-real
-              </a>
-              <p class="public-bool my-1 fs-6">public</p>
-              <i class="mdi mdi-dots-grid"></i
-            ></span>
-            <h6 class="p-1"><i class="mdi mdi-circle text-info"></i>CSS</h6>
+            <h6 class="p-1"><i class="mdi mdi-circle text-primary"></i>C#</h6>
           </div>
         </div>
       </div>
