@@ -84,16 +84,16 @@
           >Overview
         </p>
         <div class="d-flex">
-          <p class="mx-1 p-1 m-0">
+          <p class="p-1 m-0">
             <i class="mdi mdi-book p-0 m-0 d-none d-md-inline"></i>Repositories
           </p>
+          <p
+            class="bg-dark text-light rounded-pill py-0 px-2 me-2"
+            style="min-width: 20px"
+          >
+            43
+          </p>
         </div>
-        <p
-          class="bg-dark text-light rounded-pill px-2 py-0"
-          style="min-width: 20px"
-        >
-          46
-        </p>
 
         <p class="mx-1 p-1 m-0">
           <i class="mdi mdi-application-outline p-0 m-0 d-none d-md-inline"></i
@@ -117,16 +117,16 @@
           >Overview
         </p>
         <div class="d-flex">
-          <p class="mx-1 p-1 m-0">
+          <p class="p-1 m-0">
             <i class="mdi mdi-book p-0 m-0 d-none d-md-inline"></i>Repositories
           </p>
+          <p
+            class="bg-dark text-light rounded-pill py-0 px-2 me-2"
+            style="min-width: 20px"
+          >
+            43
+          </p>
         </div>
-        <p
-          class="bg-dark text-light rounded-pill px-2 py-0"
-          style="min-width: 20px"
-        >
-          46
-        </p>
 
         <p class="mx-1 p-1 m-0">
           <i class="mdi mdi-application-outline p-0 m-0 d-none d-md-inline"></i
