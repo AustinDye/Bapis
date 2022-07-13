@@ -24,7 +24,13 @@ import { fakeWebService } from "../services/FakeWebServices";
 export default {
   props: {},
   setup() {
-    return {};
+    return {
+      page: computed(() => AppState.page),
+      switchPage() {
+        console.log(AppState.page);
+        fakeWebService.switchPage();
+      },
+    };
   },
 };
 </script>
