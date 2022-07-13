@@ -1,6 +1,6 @@
 <template>
   <div class="container my-5">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center g-0">
       <div class="col-md-4 mt-5">
         <h1>Austin Dye</h1>
         <h4>Software Developer</h4>
@@ -10,7 +10,7 @@
           animi facilis quod quos similique doloremque et dignissimos optio
           culpa repellendus voluptate?
         </p>
-        <div class="btn text-white border btn-success me-4">
+        <div class="btn text-white border btn-success me-4" @click="openModal">
           DOWNLOAD RESUME
         </div>
         <div class="btn text-white border btn-info">CONTACT</div>
@@ -169,12 +169,20 @@
       <div class="col-md-6"></div>
     </div>
   </div>
+  <Modal />
 </template>
 
 <script>
+import { Modal } from "bootstrap";
 export default {
   setup() {
-    return {};
+    return {
+      openModal() {
+        Modal.getOrCreateInstance(
+          document.getElementById("exampleModal")
+        ).toggle();
+      },
+    };
   },
 };
 </script>

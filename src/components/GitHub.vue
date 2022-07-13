@@ -127,18 +127,23 @@
         </a>
       </div>
     </div>
+    <!--aahhhhh-->
+
     <div
       class="col-12 d-flex mb-4 mt-2 profile-nav sticky-top d-flex d-md-none"
     >
       <div class="container d-flex align-items-baseline overflow-scroll pt-2">
-        <p class="mx-1 p-1 m-0">
+        <a class="mx-1 p-1 m-0 text-white">
           <i class="mdi mdi-book-open-blank-variant d-none d-md-inline"></i
           >Overview
-        </p>
+        </a>
         <div class="d-flex">
-          <p class="p-1 m-0">
+          <a
+            class="p-1 m-0 text-white"
+            href="https://github.com/AustinDye?tab=repositories"
+          >
             <i class="mdi mdi-book p-0 m-0 d-none d-md-inline"></i>Repositories
-          </p>
+          </a>
           <p
             class="bg-dark text-light rounded-pill py-0 px-2 me-2"
             style="min-width: 20px"
@@ -147,19 +152,29 @@
           </p>
         </div>
 
-        <p class="mx-1 p-1 m-0">
-          <i class="mdi mdi-application-outline p-0 m-0 d-none d-md-inline"></i
-          >Projects
-        </p>
-        <p class="mx-1 p-1 m-0">
+        <a
+          class="mx-1 p-1 m-0 text-white"
+          href="https://github.com/AustinDye?tab=projects&type=beta"
+        >
+          <i class="mdi mdi-application p-0 m-0 d-none d-md-inline"></i>Projects
+        </a>
+        <a
+          class="mx-1 p-1 m-0 text-white"
+          href="https://github.com/AustinDye?tab=packages"
+        >
           <i class="mdi mdi-cube-outline p-0 m-0 d-none d-md-inline"></i
           >Packages
-        </p>
-        <p class="mx-1 p-1 m-0">
+        </a>
+        <a
+          class="mx-1 p-1 m-0 text-white"
+          href="https://github.com/AustinDye?tab=stars"
+        >
           <i class="mdi mdi-star-outline p-0 m-0 d-none d-md-inline"></i>Stars
-        </p>
+        </a>
       </div>
     </div>
+
+    <!--aahhhhh---->
 
     <div class="col-lg-3 mb-5 ps-5 d-none d-lg-flex">
       <div class="position-relative profile-img">
