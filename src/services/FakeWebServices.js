@@ -4,8 +4,8 @@ import { api } from './AxiosService'
 
 class FakeWebService {
   
-  switchPage(num) {
-      AppState.page = num
+  switchPage() {
+      return AppState.page = !AppState.page
   }
   
 }

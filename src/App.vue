@@ -15,10 +15,12 @@
                     <p class="fs-3 my-0 pb-0">Home</p>
                   </div>
                   <div class="col-4">
-                    <p class="fs-3 ps-2 my-0 pb-0">Skills</p>
+                    <p class="fs-3 ps-2 my-0 pb-0" @click="switchPage()">
+                      GitHub
+                    </p>
                   </div>
                   <div class="col-4">
-                    <p class="fs-3 my-0 pb-0">About</p>
+                    <p class="fs-3 my-0 pb-0" @click="switchPage()">About</p>
                   </div>
                 </div>
               </div>
@@ -43,7 +45,10 @@ export default {
   name: "App",
   setup() {
     return {
-      appState: computed(() => AppState),
+      page: computed(() => AppState.page),
+      switchPage() {
+        fakeWebService.switchPage();
+      },
     };
   },
 };
