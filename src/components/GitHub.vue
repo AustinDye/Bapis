@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-dark p-0">
-    <div class="container-fluid">
+    <div class="container-fluid px-2">
       <a class="navbar-brand" href="#"
         ><i class="mdi mdi-github mdi-36px text-white"></i
       ></a>
@@ -56,7 +56,7 @@
       </div>
     </div>
   </nav>
-  <div class="row p-2 git-font">
+  <div class="row git-font g-0 p-3">
     <div class="col-12">
       <div class="d-sm none d-md-block d-lg-none">
         <div class="d-flex">
@@ -183,28 +183,22 @@
             <h5 class="mt-3 mx-4">-Links-</h5>
             <ul class="mt-3">
               <li class="d-flex">
-                <p>CodeWars:</p>
-                <a href="https://www.codewars.com/users/AustinDye"
-                  >https://www.codewars.com/users/AustinDye</a
-                >
+                <a href="https://www.codewars.com/users/AustinDye">CodeWars</a>
               </li>
               <li class="d-flex">
-                <p>LinkedIn:</p>
                 <a href="https://www.linkedin.com/in/austin-dye-03464199/"
-                  >https://www.linkedin.com/in/austin-dye-03464199/</a
+                  >LinkedIn</a
                 >
               </li>
               <li class="d-flex">
-                <p>Unity Learn:</p>
                 <a
                   href="https://learn.unity.com/u/5d5b6908edbc2a002489e7a4?tab=profile"
-                  >https://learn.unity.com/u/5d5b6908edbc2a002489e7a4?tab=profile</a
+                  >Unity Learn</a
                 >
               </li>
               <li class="d-flex">
-                <p>Portfolio:</p>
                 <a href="https://austindye.github.io/WIP-Portfolio/#/"
-                  >You are here!</a
+                  >Portfolio</a
                 >
               </li>
             </ul>

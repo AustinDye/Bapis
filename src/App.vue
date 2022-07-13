@@ -9,7 +9,7 @@
           <div class="terminal">
             <div>
               <div class="bg-white d-flex justify-content-start topbar">
-                <div class="row">
+                <div class="row mx-0">
                   <div class="col-4 d-flex">
                     <i class="mdi mdi-apple mdi-24px mx-2"></i>
                     <p class="fs-3 my-0 pb-0">Home</p>
@@ -22,7 +22,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row window-row">
+              <div class="row mx-0 g-0">
                 <div class="col-12">
                   <Windows />
                 </div>
@@ -86,7 +86,6 @@ export default {
   position: relative;
   width: 100vw;
   font-family: "VT323", monospace;
-  margin: 1%;
   border-radius: 0.8em / 10%;
   background-color: grey;
   overflow: hidden;
