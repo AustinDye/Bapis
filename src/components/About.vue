@@ -1,7 +1,17 @@
 <template>
-  <div class="container my-5">
-    <div class="row justify-content-center g-0">
-      <div class="col-md-4 mt-5">
+  <div class="container my-5 p-3">
+    <div class="row justify-content-center g-0 mb-5">
+      <div class="col-md-4 mx-2 mb-1">
+        <div class="border rounded-circle p-3 bg-dark">
+          <img
+            class="rounded-circle w-100 outline shadow-lg"
+            alt="100x100"
+            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+      <div class="col-md-4 mt-5 ms-5">
         <h1>Austin Dye</h1>
         <h4>Software Developer</h4>
         <p>
@@ -14,16 +24,6 @@
           DOWNLOAD RESUME
         </div>
         <div class="btn text-white border btn-info">CONTACT</div>
-      </div>
-      <div class="col-md-4 mx-2 mb-5">
-        <div class="border rounded-circle p-3 bg-dark">
-          <img
-            class="rounded-circle w-100 outline shadow-lg"
-            alt="100x100"
-            src="https://avatars.githubusercontent.com/u/101369015?v=4"
-            data-holder-rendered="true"
-          />
-        </div>
       </div>
     </div>
     <div class="row">
