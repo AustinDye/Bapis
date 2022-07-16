@@ -57,7 +57,7 @@
           ><img
             class="rounded-circle user-img ms-2"
             alt="100x100"
-            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            :src="gitUser.avatar_url"
             data-holder-rendered="true"
           />
         </span>
@@ -71,7 +71,7 @@
           <img
             class="rounded-circle w-25 h-25"
             alt="100x100"
-            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            :src="gitUser.avatar_url"
             data-holder-rendered="true"
           />
           <span class="ms-4"
@@ -182,13 +182,13 @@
           <img
             class="rounded-circle w-100"
             alt="100x100"
-            src="https://avatars.githubusercontent.com/u/101369015?v=4"
+            :src="gitUser.avatar_url"
             data-holder-rendered="true"
           />
         </div>
         <div class="profile-text">
-          <h1 class="fs-2 m-0 p-0">Austin Dye</h1>
-          <h5 class="m-0 p-0 mb-4">AustinDye</h5>
+          <h1 class="fs-2 m-0 p-0">{{ gitUser.name }}</h1>
+          <h5 class="m-0 p-0 mb-4">{{ gitUser.login }}</h5>
           <span class="d-flex">
             <p>
               <i class="mdi mdi-account-multiple-outline pe-2"></i
@@ -199,7 +199,7 @@
           >
 
           <i class="mdi mdi-link-variant pe-2"></i
-          ><a class="">aupredye@gmail.com</a>
+          ><a class="">{{ gitUser.blog }}</a>
         </div>
       </div>
     </div>
@@ -326,9 +326,15 @@
 </template>
 
 <script>
+import { computed } from "@vue/reactivity";
+import { AppState } from "../AppState";
+import { gitHubApiService } from "../services/GitHubApiService";
+import { GitUser } from "../Models/GitUser";
 export default {
   setup() {
-    return {};
+    return {
+      gitUser: computed(() => AppState.gitUser),
+    };
   },
 };
 </script>

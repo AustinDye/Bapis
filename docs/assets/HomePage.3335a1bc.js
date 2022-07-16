@@ -1,0 +1,1 @@
+import{_ as e}from"./index.6188faff.js";import"./vendor.9559dfa6.js";const _={name:"Home"};function a(o,r,t,n,s,d){return null}var f=e(_,[["render",a],["__scopeId","data-v-150a7d8d"]]);export{f as default};

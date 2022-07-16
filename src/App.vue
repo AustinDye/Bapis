@@ -11,7 +11,10 @@
               <div class="bg-white d-flex justify-content-start topbar">
                 <div class="row mx-0">
                   <div class="col-4 d-flex">
-                    <i class="mdi mdi-apple mdi-24px mx-2"></i>
+                    <i
+                      class="mdi mdi-apple mdi-24px mx-2"
+                      @click="getProfile"
+                    ></i>
                     <p class="fs-3 my-0 pb-0">Home</p>
                   </div>
                   <div class="col-4">
@@ -38,14 +41,21 @@
 </template>
 
 <script>
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { AppState } from "./AppState";
 import { fakeWebService } from "./services/FakeWebServices";
+import { github } from "./services/AxiosService";
+import { gitHubApiService } from "./services/GitHubApiService";
 export default {
   name: "App",
   setup() {
+    onMounted(async () => {
+      await gitHubApiService.getProfile();
+      console.log(AppState.gitUser);
+    });
     return {
       page: computed(() => AppState.page),
+      gitUser: computed(() => AppState.gitUser),
       switchPage() {
         fakeWebService.switchPage();
       },
